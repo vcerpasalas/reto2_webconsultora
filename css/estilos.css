@@ -227,8 +227,8 @@
 .mix__image:hover {
     transform: scale(1.05);
     border: 1px solid #000;
-    border-radius: 10px;
-    box-shadow: -4px 4px 0 0.1rem #979797;
+    border-radius: 2px;
+    box-shadow: -1px 1px 0 0.01rem #303030;
 }
 
 /* Preferencias */

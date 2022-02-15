@@ -3,7 +3,7 @@
     margin: 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 0.20rem 0.20rem 0 #616161;
 }
 
@@ -13,7 +13,7 @@
     background-color: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 0.20rem 0.20rem 0 #616161;
 }
 
@@ -52,11 +52,11 @@
 }
 
 .header-nav__link {
-    text-decoration: none;
-    font-weight: 550;
+    text-decoration: none;   
+    font-weight: bold;
     color: #248091;
     transition: all 0.25s;
-    font-size: 16px;
+    font-size: 14px;
     justify-content: center;
     align-items: center;
 }
@@ -180,17 +180,17 @@ h2 {
 }
 
 .textos-experiencia {
-    color: #fd8787;
+    color: #fd8787;  
 }
 
 .textos-experiencia {
-    color: lightseagreen;
+    color: lightseagreen;     
 }
 
 .contacto-list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     list-style: none;
     gap: 1.5rem;
     margin: 0;

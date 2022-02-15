@@ -1,3 +1,9 @@
+:root {
+    --backgroud-color: #fff;
+    --button-color: #248091;
+    --button-color_2: #fd8787;
+}
+
 .body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -10,11 +16,11 @@
 /* Header */
 
 .header {
-    background-color: #ffffff;
+    background-color: var(--backgroud-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 0.20rem 0.20rem 0 #616161;
+    box-shadow: 0 0.20rem 0.20rem 0 #616161;  
 }
 
 .header-nav {
@@ -54,7 +60,7 @@
 .header-nav__link {
     text-decoration: none;   
     font-weight: bold;
-    color: #248091;
+    color: var(--button-color);
     transition: all 0.25s;
     font-size: 14px;
     justify-content: center;
@@ -62,8 +68,8 @@
 }
 
 .header-nav__link:hover {
-    color: #fd8787;
-    border-bottom: 0.25rem solid #fd8787;
+    color: var(--button-color_2);
+    border-bottom: 0.25rem solid var(--button-color_2);
 }
 
 /* Presentación */
@@ -82,7 +88,7 @@
 
 .textos-page {
     height: 500px;
-    color: #fff;
+    color: var(--backgroud-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +106,7 @@ h1 {
 
 h2 {
     color: inherit;
-    border: 1px solid whitesmoke;  
+    border: 1px solid var(--backgroud-color);  
 }
 
 .textos-page p {
@@ -111,24 +117,24 @@ h2 {
 .textos-page a {
     display: inline-block;
     padding: 12px 15px;
-    background: #248091;
-    border-radius: 8px;
-    color: rgb(255, 255, 255);
+    background: var(--button-color);
+    border-radius: 33px;
+    color: var(--backgroud-color);
 }
 
 .contacto_textos-page {
-    background-color: #fd8787;
+    background-color: var(--button-color_2);
     border: 0.1rem solid #0b4e5a;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: #fff;
+    color: var(--backgroud-color);
     transition: all 0.5s;
 }
 
 .contacto_textos-page:hover {
-    border: 0.1rem solid #fff;
-    background-color: #fd8787;
+    border: 0.1rem solid var(--backgroud-color);
+    background-color: var(--button-color_2);
 }
 
 /* Información */
@@ -139,7 +145,7 @@ h2 {
     max-width: 1000px;
     overflow: hidden;
     margin: auto;
-    padding: 0 0 80px 0;
+    padding: 0 0 80px 0;    
 }
 
 .contenedor {
@@ -157,7 +163,7 @@ h2 {
 
 .website {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
 
 .website img {
@@ -180,7 +186,7 @@ h2 {
 }
 
 .textos-experiencia {
-    color: #fd8787;  
+    color: var(--button-color_2);  
 }
 
 .textos-experiencia {
@@ -199,7 +205,7 @@ h2 {
 
 .contacto_cta {
     background-color: #0b4e5a;
-    color: white;
+    color: var(--backgroud-color);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -209,8 +215,8 @@ h2 {
 }
 
 .contacto_cta:hover {
-    border: 0.1rem solid #fff;
-    background-color: #fd8787;
+    border: 0.1rem solid var(--backgroud-color);
+    background-color: var(--button-color_2);
     box-shadow: 0 0 0.5rem 0.25rem #d1d1d1;
     transform: scale(1.25);
 }
@@ -227,8 +233,8 @@ h2 {
 /* Información adicional */
 
 .info {
-    background: #248091;
-    color: #fff;
+    background: var(--button-color);
+    color: var(--backgroud-color);
 }
 
 .titulo.left__2 {
@@ -266,7 +272,7 @@ p  ~ p {
 .preferencias {
     text-align: center;
     padding: 2rem 0;
-    background-color: #248091;
+    background-color: var(--button-color);
 }
 
 .preferencias-container {
@@ -275,11 +281,11 @@ p  ~ p {
     gap: 2rem;
     padding: 0 2rem;
     max-width: 1024px;
-    margin: auto;
+    margin: auto;   
 }
 
 .preferencias__title {
-    color: #ffffff;
+    color: var(--backgroud-color);
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
@@ -297,8 +303,8 @@ p  ~ p {
 
 
 .preferencias__preferencia {
-    background-color: #fd8787;
-    color: white;
+    background-color: var(--button-color_2);   
+    color: var(--backgroud-color);
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -313,7 +319,7 @@ ul > li {
 }
 
 .preferencias__preferencia:hover {
-    box-shadow: 0 0 0.5rem 0.25rem #248091;
+    box-shadow: 0 0 0.5rem 0.25rem var(--button-color);
     transform: scale(1.25);
 }
 
@@ -356,10 +362,10 @@ ul > li {
 .cta {
     display: inline-block;
     text-decoration: none;
-    background-image: linear-gradient(45deg, #248091 0%, #248091 99%, #248091 100%);
+    background-image: linear-gradient(45deg, var(--button-color) 0%, var(--button-color) 99%, var(--button-color) 100%);
     padding: 12px 15px;
     border-radius: 8px;
-    color: #fff;
+    color: var(--backgroud-color);
 }
 
 .cta:hover {
@@ -371,7 +377,7 @@ ul > li {
 
 footer {
     background: #b3737b;
-    color: #fff;
+    color: var(--backgroud-color);
     gap: 1rem;
 }
 
@@ -383,7 +389,7 @@ footer {
 
 .input {
     background: transparent;
-    border: 0.25rem solid #fff;
+    border: 0.25rem solid var(--backgroud-color);
     border-radius: 0.5rem;
     padding: 0.75rem;
     color: rgb(2, 2, 2);
@@ -404,7 +410,7 @@ footer {
 }
 
 .input:focus {
-    border: 0.25rem solid #248091;
+    border: 0.25rem solid var(--button-color);
 }
 
 input[type="text"],
@@ -428,16 +434,16 @@ input[type="submit"] {
 
 .form-submit {
     align-self: center;
-    background-color: #248091;
-    border: 0.2rem solid #ffffff;
+    background-color: var(--button-color);
+    border: 0.2rem solid var(--backgroud-color);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: #ffffff;
+    color: var(--backgroud-color);
     transition: all 0.5s;
 }
 
 .form-submit:hover {
-    border: 0.2rem solid #248091;
+    border: 0.2rem solid var(--button-color);
     background-color: #ec9ba4;
 }
 
@@ -478,6 +484,7 @@ input[type="submit"] {
     max-width: 30rem;
     margin: 1em auto;
     padding: 1em;
+    height: 25vh;  
 }
 
 .contact__image {
@@ -511,7 +518,7 @@ input[type="submit"] {
 
     .titulo.left {
         text-align: center;
-        color: #fd8787;
+        color: var(--button-color_2);
     }
 
     .info p {
@@ -525,7 +532,7 @@ input[type="submit"] {
     }
 
     .website img {
-        width: 100%;
+        width: 100%;       
     }
 
     .website .contenedor-textos-main {
@@ -537,3 +544,6 @@ input[type="submit"] {
         margin-bottom: 20px;
     }
 }
+
+
+

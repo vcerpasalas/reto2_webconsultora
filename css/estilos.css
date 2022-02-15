@@ -180,7 +180,11 @@ h2 {
 }
 
 .textos-experiencia {
-    color: #248091;
+    color: #fd8787;
+}
+
+.textos-experiencia {
+    color: lightseagreen;
 }
 
 .contacto-list {
@@ -231,7 +235,15 @@ h2 {
     color: #f7b8bf;
 }
 
-p~p {
+.titulo__center::after {
+    content: " 💻";
+}
+
+.titulo__center::before {
+    content: "💻 ";
+}
+
+p  ~ p {
     background-color: lightgray;
     color: #000;
     text-align: center;

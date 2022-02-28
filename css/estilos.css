@@ -1,4 +1,5 @@
 :root {
+    scroll-behavior: smooth;
     --backgroud-color: #fff;
     --text-color: #f7b8bf;
     --text-color2: #000000;
@@ -488,11 +489,13 @@ input[type="submit"] {
     border-radius: 0.5rem;
     color: var(--backgroud-color);
     transition: all 0.5s;
+    font-weight: 600;
 }
 
 .form-submit:hover {
     border: 0.2rem solid var(--button-color);
     background-color: var(--form-background);
+    color: var(--alternative-shadow);
 }
 
 /* Redes sociales */

@@ -74,6 +74,10 @@
     transition: all 0.5s;
 }
 
+.header-nav__menu-checkbox {
+    display: none;
+}
+
 .header-nav__link-list {
     position: fixed;
     display: flex;
@@ -105,8 +109,8 @@
     font-weight: bold;
 }
 
-.header-nav__menu-checkbox {
-    display: none;
+.header-nav__link:hover {
+    color: var(--button-color);
 }
 
 .header-nav__menu-checkbox:checked+.header-nav__link-list {
@@ -115,9 +119,6 @@
     opacity: 0.9;
 }
 
-.header-nav__link:hover {
-    color: var(--button-color);
-}
 
 /* Presentación */
 
@@ -133,7 +134,7 @@
     overflow: hidden;
 }
 
-.textos-page {
+.page-textos {
     height: 500px;
     color: var(--backgroud-color);
     display: flex;
@@ -146,7 +147,7 @@ h1 {
     color: inherit;
 }
 
-.textos-page h1 {
+.page-textos h1 {
     font-size: 60px;
     padding: 5mm;
 }
@@ -156,12 +157,12 @@ h2 {
     border: 1px solid var(--backgroud-color);
 }
 
-.textos-page p {
+.page-textos p {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.textos-page a {
+.page-textos a {
     display: inline-block;
     padding: 12px 15px;
     background: var(--button-color);
@@ -169,7 +170,7 @@ h2 {
     color: var(--backgroud-color);
 }
 
-.contacto_textos-page {
+.page-textos__button {
     background-color: var(--button-color_2);
     border: 0.1rem solid var(--border-color);
     text-decoration: none;
@@ -179,7 +180,7 @@ h2 {
     transition: all 0.5s;
 }
 
-.contacto_textos-page:hover {
+.page-textos__button:hover {
     border: 0.1rem solid var(--backgroud-color);
     background-color: var(--button-color_2);
 }

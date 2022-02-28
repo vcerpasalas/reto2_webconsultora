@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Arquitecta de interiores | Abril Muñoz Alvarez</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -28,36 +30,38 @@
     <meta property="twitter:title" content="Arquitecta de interiores | Abril Muñoz Alvarez">
     <meta property="twitter:description" content="">
     <meta property="twitter:image" content="">
-
-    <link rel="stylesheet" href="./css/normalize.css">
 </head>
 
 <body class="body">
     <header class="header">
         <nav class="header-nav">
-            <a href="abril_muñoz" class="header-nav__link-logo-container">
-                <img src="https://i.pinimg.com/originals/cb/dc/56/cbdc5663ee8115d8077000665a79a6a5.png"
-                    alt="Logo Interior Designer" class="header-nav__logo" width="100 rem" />
+            <a href="#home" class="header-nav__link-logo-container">
+                <img src="./img/logo-arquitecta.png" alt="Logo de arquitecta" class="header-nav__link-logo" />
             </a>
+            <label for="menu" class="header-nav__menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox" />
             <ul class="header-nav__link-list">
                 <li class="header-nav__link-item">
-                    <a href="#Home" class="header-nav__link">Home</a>
+                    <a href="#home" class="header-nav__link">Home</a>
                 </li>
                 <li class="header-nav__link-item">
-                    <a href="#AcercaDeMi" class="header-nav__link">Acerca de mi</a>
+                    <a href="#acercademi" class="header-nav__link">Acerca de mi</a>
                 </li>
                 <li class="header-nav__link-item">
-                    <a href="#Servicios" class="header-nav__link">Servicios</a>
+                    <a href="#servicios" class="header-nav__link">Servicios</a>
                 </li>
                 <li class="header-nav__link-item">
-                    <a href="#Portafolio" class="header-nav__link">Portafolio</a>
+                    <a href="#portafolio" class="header-nav__link">Portafolio</a>
                 </li>
                 <li class="header-nav__link-item">
-                    <a href="#Contacto" class="header-nav__link">Contacto</a>
+                    <a href="#contacto" class="header-nav__link">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <header class="page">
         <div class="textos-page animate__animated  animate__fadeInLeft">
             <h1>Bienvenid@ a mi Web</h1><br>
@@ -145,7 +149,7 @@
         </figure>
     </section>
 
-    <section class="cards contenedor">
+    <section class="cards contenedor animate__flipInX">
         <h2 class="titulo">Mis servicios</h2>
         <div class="content-cards">
             <article class="card">
@@ -224,6 +228,9 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 
 </html>

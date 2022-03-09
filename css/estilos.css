@@ -155,6 +155,8 @@ h1 {
 h2 {
     color: inherit;
     border: 1px solid var(--backgroud-color);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
 }
 
 .page-textos p {
@@ -185,13 +187,13 @@ h2 {
     background-color: var(--button-color_2);
 }
 
+
 /* Información */
 
 .contenedor,
 .wave-contenedor {
     width: 90%;
     max-width: 1000px;
-    overflow: hidden;
     margin: auto;
     padding: 0 0 80px 0;
 }
@@ -272,7 +274,7 @@ h2 {
 
 .wave-separator__wave-container {
     display: flex;
-    margin: 0;
+    margin: -6px;
 }
 
 .wave-separator__wave-container--r-180deg {
@@ -323,6 +325,7 @@ p~p {
     text-align: center;
     padding: 2rem 0;
     background-color: var(--button-color);
+     
 }
 
 .preferencias-container {
@@ -385,10 +388,11 @@ ul>li {
 .card {
     width: 30%;
     text-align: center;
-    height: 300px;
+
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
     transform: scale(1);
     transition: transform 0.6s;
+    padding: 0.5rem;
 }
 
 .card:hover {
